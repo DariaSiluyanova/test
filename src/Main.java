@@ -13,9 +13,9 @@ public class Main {
             // Создаем ArrayList, в который будем складывать все файлы
             ArrayList<File> fileList = new ArrayList<>();
             //удаляем result.txt, если он уже существует
-            Files.deleteIfExists(Paths.get("\\test\\result.txt"));
+            Files.deleteIfExists(Paths.get("C:\\Users\\Public\\Downloads\\test\\result.txt"));
             // Получаем файлы из указанной 1-м параметром папки
-            getFiles(new File("\\"), fileList);
+            getFiles(new File("C:\\Users\\Public\\Downloads\\"), fileList);
             // Создаем файл result.txt, куда будет записываться результат
             File fileRes = new File("result.txt");
             PrintWriter pw = new PrintWriter(fileRes);
